@@ -9,7 +9,7 @@
     }
 ?>
 
-<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a href="index.php" class="navbar-brand">CourseApp</a>
         

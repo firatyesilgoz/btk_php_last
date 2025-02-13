@@ -6,9 +6,9 @@
         fclose($myfile);
         return $data;
     }
- function kursEkle(&$kurslar,string $baslik,string $altBaslik,string $resim, string $yayinTarihi,int $yorumSayisi=0,int $begeniSayisi=0,bool $onay=true){
-       
-    $yeni_kurs[count($kurslar)+1] =array(
+ function kursEkle(string $baslik,string $altBaslik,string $resim, string $yayinTarihi,int $yorumSayisi=0,int $begeniSayisi=0,bool $onay=true){
+    $db = getDb();
+    array_push($db["kurslar"],array(
         "baslik"=>$baslik,
         "altBaslik"=>$altBaslik,
         "resim"=>$resim,
@@ -16,13 +16,21 @@
         "yorumSayisi"=>$yorumSayisi,
         "begeniSayisi"=>$begeniSayisi,
         "onay"=>$onay
-    );
-    $kurslar=array_merge($kurslar,$yeni_kurs);
+    ));
+    
+
+    $myfile = fopen("db.json", "w");
+    if ($myfile === false) {
+        echo "Dosyaya yazma hatası oluştu.";
+        return;
+    }
+   
+    fwrite($myfile, json_encode($db,JSON_PRETTY_PRINT));
+    fclose($myfile);
 }
 
 
-kursEkle($kurslar,"yeniKurs2","yeni altbaslik2","2.jpg","10.10.2023");
-kursEkle($kurslar,"yeniKurs1","yeni altbaslik1","1.jpg","10.10.2023");
+
 
 function urlDuzenle($baslik) {
     return str_replace([" ","."],["-","-"],strtolower($baslik));

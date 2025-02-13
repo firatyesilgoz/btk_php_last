@@ -1,4 +1,4 @@
-<?php foreach($kurslar as $key => $kurs):?>
+<?php foreach(getDb()["kurslar"] as $key => $kurs):?>
 
 <?php if($kurs["onay"]):?>
     <div class="card mb-3 w-75">
