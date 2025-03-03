@@ -33,7 +33,7 @@
                                 </td>
                                 <td>
                                     <a href="category-edit.php?id=<?php echo $category["id"];?>" class="btn btn-primary btn-sm">Edit</a>
-                                    <a href="category-delete.php?id=<?php echo $category["id"];?>" class="btn btn-danger btn-sm">Edit</a>
+                                    <a href="category-delete.php?id=<?php echo $category["id"];?>" class="btn btn-danger btn-sm">Delete</a>
                                 </td>
                                 
                             </tr>
