@@ -1,0 +1,67 @@
+.hero-section {
+  position: relative;
+  text-align: left; /* Text alignment left */
+  color: white;
+  cursor: default;
+}
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  font-family: 'Caslon', sans-serif;
+  top: 40%;
+  left: 15%; /* Sola kaydırdık */
+  transform: translate(0, -50%); /* Yalnızca dikeyde ortalama */
+  padding: 20px;
+  width: 80%;
+  max-width: 700px;
+}
+
+.overlay-text h2 {
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem; /* Başlık boyutunu belirledik */
+  line-height: 1.2;
+}
+
+.overlay-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .overlay-text {
+    width: 90%;
+    padding: 15px;
+    left: 5%; /* Mobilde biraz daha sola kaydır */
+  }
+
+  .overlay-text h2 {
+    font-size: 2rem; /* Başlık boyutunu küçültüyoruz */
+  }
+
+  .overlay-text p {
+    font-size: 1rem; /* Paragraf yazı boyutunu küçültüyoruz */
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text {
+    width: 90%;
+    padding: 10px;
+    left: 5%; /* Küçük ekranlar için sola kaydırmaya devam */
+  }
+
+  .overlay-text h2 {
+    font-size: 1.6rem; /* Küçük ekranlarda başlık boyutunu daha da küçültüyoruz */
+  }
+
+  .overlay-text p {
+    font-size: 0.9rem; /* Küçük ekranlar için paragraf boyutunu küçültüyoruz */
+  }
+}

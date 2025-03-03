@@ -1,0 +1,92 @@
+/* Genel stil ayarları */
+
+
+
+/* Ana container */
+.contact-container {
+    width: 100%;
+    padding: 40px;
+    padding-top: 80px;
+}
+.navbar{
+    background-color: #000;
+}
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* İletişim bilgileri kutusu */
+.contact-info, .contact-map {
+    flex: 1;
+    min-width: 320px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-info h2{
+    display: flex
+;
+    justify-content: center;
+}
+.contact-info {
+    background-color: #000000;
+    
+}
+
+.contact-info h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.contact-info p {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+/* Hover efektleri */
+.contact-info:hover, .contact-map:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Harita kutusu */
+.contact-map {
+    height: 400px;
+    background-color: #000;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+    }
+    .contact-map {
+        height: 300px;
+    }
+}
+/* Responsive tasarım */
+@media (max-width: 480px) {
+    .contact-container{
+        width: none;
+        margin: 0px;
+    }
+    .contact-map {
+        height: 300px;
+    }
+}
+.p-alt{
+    padding: inherit;
+    margin: 50px;
+}

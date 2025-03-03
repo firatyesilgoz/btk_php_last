@@ -1,0 +1,88 @@
+.carousel-item img {
+  width: 100%;
+  height: 100%; /* Ensure the height adjusts accordingly */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+.carousel-item {
+  position: relative;
+  height: 100vh; /* Make carousel item height equal to the screen height */
+}
+
+.carousel-caption {
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow to text */
+  padding: 10px;
+}
+
+.navbar {
+  background-color: transparent !important;
+  z-index: 10; /* Keeps navbar in front */
+}
+
+/* Sliding and fading effects */
+.carousel-item {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Slide and fade effect */
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  opacity: 1;
+  transform: translateX(0); /* Slide in to normal position */
+}
+
+/* Fade-in animation for images */
+.carousel-item img {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Caption positionings */
+.top-left {
+  top: 50%;
+  left: 70%;
+  transform: translate(0, 0);
+}
+
+.bottom-right {
+  bottom: 5%;
+  right: 20%;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Typing effect for text */
+.animated-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  font-size: 2rem;
+  animation: typing 4s linear forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

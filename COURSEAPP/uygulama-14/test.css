@@ -1,0 +1,27 @@
+.test {
+    margin-top: 50px; 
+    background-color: #ffffff; /* Arka plan rengini buradan değiştirebilirsiniz */
+    padding: 20px; /* İçeriğe boşluk eklemek için */
+    border-radius: 10px; /* Kenarlara yuvarlaklık eklemek için */
+}
+.btn {
+    background-color: #7bd68a;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn:hover {
+    background-color: #00b31e;  /* Hover (fareyle üzerine gelince) arka plan rengi */
+}
+body {
+    background-color: #c1ddda;  /* Sayfa arka plan rengi */
+}
+input:hover {
+    border-color: #007bff;  /* Çerçeve rengini mavi yapar */
+}
+
+
+
+
+ 

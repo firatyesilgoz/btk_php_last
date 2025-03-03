@@ -1,0 +1,66 @@
+
+.team-row{
+    display: flex;
+}
+.team-col-4{
+    width: 33.3%;
+   
+}
+.card-title-l{
+    display: flex;
+}
+.cardr, .cardm, .cardsr {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 500px; /* Minimum yükseklik, ihtiyaca göre artırılabilir */
+    height: 100%; /* Kartların tam yüksekliği kaplamasını sağlar */
+    padding: 0%;
+    margin: 0%;
+}
+.cardm{
+    background-color: black;
+}
+.card-title-alt {
+    cursor: pointer; /* İmleci pointer yapar */
+  }
+  
+  .card-title-alt:hover {
+    cursor: pointer; /* Hover durumunda da pointer işaretçisi olacak */
+  }
+  
+.card-bodys {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Dikeyde ortalar */
+    align-items: center; /* Yatayda ortalar */
+    text-align: center; /* Metni ortalar */
+    flex-grow: 1; /* Kart içeriğini esneterek eşit yapar */
+    
+}
+.card-title-b{
+    font-family: 'Dancing Script', sans-serif;
+    color: #C59D5F;
+    font-weight: 300;
+    font-size: xxx-large;
+}
+.card-title-m{
+    color: rgb(255, 255, 255);
+}
+.card-title-alt{
+    color: #C59D5F;
+    font-size: small;
+}
+
+.card-bodys {
+    transition: border 0.2s ease, transform 0.3s ease; /* Çerçeve ve zoom geçişlerini ekler */
+    transform-origin: center; /* Zoom merkezi, öğenin ortasında olacak */
+}
+
+.card-bodys:hover {
+    border: 3px solid #C59D5F; /* Hover ile çerçeve ekler */
+    margin: 20px;
+    transform: scale(0.95); /* Hover sırasında zoom etkisi */
+}
+
+

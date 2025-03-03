@@ -1,0 +1,101 @@
+.hizmet2-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.hizmet2-col-3 {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.hizmet2-col-3 ul {
+    list-style: none;
+}
+
+.h2e {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hizmet2-col-3 ul li::before {
+    content: "\f00c";  /* Font Awesome check icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: rgb(255, 247, 0);
+    margin-right: 8px;
+    font-size: 16px;
+    transition: opacity 0.3s ease, content 0.3s ease;
+}
+
+.hizmet2-col-3 ul li:hover::before {
+    opacity: 0;
+    content: "\2022";  /* Bullet point (•) */
+    font-size: 30px;
+}
+
+.hizmet2-container img {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.hizmet2-container h2 {
+    justify-content: center;
+    display: flex;
+    cursor: default;
+}
+
+.hizmet2-col-3 ul li {
+    display: block;
+    width: 100%;
+    cursor: default;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    min-height: 40px;
+    border-bottom: 2px dotted #b2b2b2;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.hizmet2-col-3 ul li:hover {
+    border-bottom: 3.5px dotted #ff9900;
+}
+
+/* Media Query for screens larger than 768px but smaller than 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hizmet2-col-3 {
+        width: 22%; /* Orta boyutlu ekranlarda sütun genişliğini arttır */
+    }
+
+    .hizmet2-container img {
+        width: 180px; /* Resmin boyutunu biraz küçült */
+    }
+
+    .hizmet2-col-3 ul li {
+        font-size: 14px; /* Daha küçük font boyutu */
+    }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .hizmet2-col-3 {
+        width: 100%; /* Tüm sütunları dikey hizalar */
+    }
+
+    .hizmet2-container img {
+        width: 150px; /* Resmi daha da küçült */
+    }
+
+    .hizmet2-col-3 ul li {
+        font-size: 14px; /* Font boyutunu küçük yap */
+    }
+}

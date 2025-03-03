@@ -1,0 +1,66 @@
+{
+    "kategoriler": [
+        {
+            "id": 1,
+            "kategori_adi": "Programlama",
+            "aktif": true
+        },
+        {
+            "id": 2,
+            "kategori_adi": "Web geli\u015ftirme",
+            "aktif": false
+        },
+        {
+            "id": 3,
+            "kategori_adi": "Veri Analizi",
+            "aktif": false
+        }
+    ],
+    "kurslar": [
+        {
+            "baslik": "Php Kursu",
+            "altBaslik": "S\u0131f\u0131rdan ileri seviyeye Php ile web geli\u015ftirmeS\u0131f\u0131rdan ileri seviyeye Php ile web geli\u015ftirmeS\u0131f\u0131rdan ileri seviyeye Php ile web geli\u015ftirme",
+            "resim": "1.jpg",
+            "yayinTarihi": "01.01.2023",
+            "yorumSayisi": "100",
+            "begeniSayisi": "200",
+            "onay": true
+        },
+        {
+            "baslik": "Python Kursu",
+            "altBaslik": "S\u0131f\u0131rdan ileri seviyeye Php ile web geli\u015ftirmeS\u0131f\u0131rdan ileri seviyeye Php ile web geli\u015ftirmeS\u0131f\u0131rdan ileri seviyeye Php ile web geli\u015ftirme",
+            "resim": "2.jpg",
+            "yayinTarihi": "01.01.2023",
+            "yorumSayisi": "100",
+            "begeniSayisi": "200",
+            "onay": true
+        },
+        {
+            "baslik": "Node. js Kursu",
+            "altBaslik": "S\u0131f\u0131rdan ileri seviyeye Php ile web geli\u015ftirmeS\u0131f\u0131rdan ileri seviyeye Php ile web geli\u015ftirmeS\u0131f\u0131rdan ileri seviyeye Php ile web geli\u015ftirme",
+            "resim": "3.jpg",
+            "yayinTarihi": "01.01.2023",
+            "yorumSayisi": "0",
+            "begeniSayisi": "200",
+            "onay": true
+        },
+        {
+            "baslik": "Java Dersleri",
+            "altBaslik": "java",
+            "resim": "3.jpg",
+            "yayinTarihi": "12.12.2021",
+            "yorumSayisi": 0,
+            "begeniSayisi": 10,
+            "onay": true
+        },
+        {
+            "baslik": "",
+            "altBaslik": "",
+            "resim": "",
+            "yayinTarihi": "",
+            "yorumSayisi": 0,
+            "begeniSayisi": 0,
+            "onay": true
+        }
+    ]
+}
