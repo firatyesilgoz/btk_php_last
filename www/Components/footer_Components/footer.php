@@ -51,7 +51,7 @@
     <div class="text-center">
       <!-- Sağda: Sosyal medya ikonları -->
       
-      <a class="" style="color: white; text-decoration: none;" >Copyright © Muharrem Uyanık 2025 | DEVELOP OXO YAZILIM.</a>
+      <a class="" style="color: white; text-decoration: none;" >© Muharrem Uyanık 2025 | DEVELOP OXO YAZILIM.</a>
     </div>
     <!-- Telif Hakkı -->
   </footer>

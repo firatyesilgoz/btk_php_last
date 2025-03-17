@@ -14,14 +14,10 @@
                     <img src="img/<?php echo 'marka.png' ?>">
                     <img src="img/<?php echo 'elseve.png' ?>">
                     <img src="img/<?php echo 'elidor.png' ?>">
-                    <img src="img/<?php echo 'marka.png' ?>">
-                    <img src="img/<?php echo 'elseve.png' ?>">
-                    <img src="img/<?php echo 'elidor.png' ?>">
-                    <img src="img/<?php echo 'marka.png' ?>">
-                    <img src="img/<?php echo 'elseve.png' ?>">
-                    <img src="img/<?php echo 'elidor.png' ?>">
-                    <img src="img/<?php echo 'elseve.png' ?>">
-                    <img src="img/<?php echo 'elidor.png' ?>">
+                    <img src="img/<?php echo 'avon.png' ?>">
+                    <img src="img/<?php echo 'pantene.png' ?>">
+                    <img src="img/<?php echo 'wella.png' ?>">
+                    
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </head>
-<section id="hizmetler" class="pb-0 py-md-5" >
+<section id="hizmet" class="pb-0 py-md-5" >
     <div class="hizmet2-container mt-5 mb-5">
         <h2>HİZMETLER</h2>
         <img src="img/<?php echo 'h2.png' ?>" class="h2e" alt="...">

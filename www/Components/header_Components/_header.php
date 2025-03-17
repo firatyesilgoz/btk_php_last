@@ -16,6 +16,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
+    <link rel="icon" href="img/logo1.png" type="img/png">
 
-    <title>Document</title>
+    <title>Muharrem Uyanık</title>
 </head>
